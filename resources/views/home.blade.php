@@ -28,7 +28,7 @@
       document.getElementById("popup").innerHTML = "<br/>After the start of the game, the user will have 59 seconds to figure out which random car brand the system  has selected. When the user finds a match, the app raises the winner modal. In the winner modal, there are two buttons. Start Again and Save My Score.";
     }
     </script>
-    <a href="http://localhost/laravel3/blog/resources/views/auth/countdown.blade.php" class="btn btn-info" role="button">Start the game</a>
+    <a href="http://localhost/laravel/blog/resources/views/auth/countdown.blade.php" class="btn btn-info" role="button">Start the game</a>
                 </div>
             </div>
         </div>
