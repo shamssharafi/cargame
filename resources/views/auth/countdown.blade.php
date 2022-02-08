@@ -3,7 +3,43 @@
   <head>
     <title>Random Car Game</title>
   </head>
+  <!doctype html>
+<html>
+<head>
+    <title>Car Brand Game!</title>
+
+    <!-- load bootstrap -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <style>
+        body    { padding-bottom:40px; padding-top:40px; }
+    </style>
+</head>
+<body class="container">
+
+<div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+        <div class="page-header">
+            <h1><span class="glyphicon glyphicon-flash"></span> Car Brand Game</h1>
+        </div>
+
+        <!-- FORM STARTS HERE -->
+        <form method="POST" input name="feature" id="feature" action="http://localhost/laravel/blog/resources/views/layouts/newwelcome.blade.php">
+
+            <div class="form-group">
+                <label for="name">Your gussed car brand:</label>
+                <input type="text" id="name" class="form-control" name="name" placeholder="Which car brand was selected by the system?" required>
+                
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+
+        </form>
+
+    </div>
+
+</body>
+
   <body onload="startTimer();">
+    
     <div id="countdown">
       <div id="countdown-number">59</div>
     </div>
@@ -19,6 +55,7 @@
       </button>
     </div>
     <audio id="timeout_audio"></audio>
+    
   </body>
 </html>
 
@@ -102,7 +139,7 @@ const renderTime = () => {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  
   background-image: url("https://img4.goodfon.com/wallpaper/nbig/1/2e/multfilm-shou-simpsons-personazh-20th-century-fox-art-ris-15.jpg");
 }
 #countdown {
@@ -110,11 +147,11 @@ const renderTime = () => {
   justify-content: center;
   align-items: center;
   color: #0e2c4c;
-  font-size: 70px;
-  width: 200px;
-  height: 200px;
+  font-size: 30px;
+  width: 100px;
+  height: 100px;
   background-color: #e7d9fc;
-  border-radius: 50%;
+  border-radius: 20%;
 }
 .action-list {
   display: flex;
@@ -123,6 +160,7 @@ const renderTime = () => {
 }
 button {
   border: none;
+  display: none;
   background-color: #e7d9fc;
   border-radius: 50%;
   width: 60px;
