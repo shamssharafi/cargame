@@ -23,14 +23,20 @@
         </div>
 
         <!-- FORM STARTS HERE -->
-        <form method="POST" input name="feature" id="feature" action="http://localhost/laravel/blog/resources/views/layouts/newwelcome.blade.php">
+        <script>
+          function lettersOnly(input) {
+              var zx = /[^a-z]/gi;
+              input.value = input.value.replace(zx, "");
+          }
+          </script>
+        <form method="POST" input name="name" id="name" action="http://localhost/laravel/blog/resources/views/layouts/newwelcome.blade.php">
 
             <div class="form-group">
                 <label for="name">Your gussed car brand:</label>
-                <input type="text" id="name" class="form-control" name="name" placeholder="Which car brand was selected by the system?" required>
-                
+                <input type="text" id="name" onkeyup="lettersOnly(this)" class="form-control" name="name" placeholder="Which car brand was selected by the system?" required>
+                <span class="validity"></span>
             </div>
-            <button type="submit" class="btn btn-success">Submit</button>
+            <button type="submit" value="submit" class="btn btn-success">Submit</button>
 
         </form>
 
