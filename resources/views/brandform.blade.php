@@ -25,7 +25,7 @@
                 <input type="text" id="name" class="form-control" name="name" placeholder="Which car brand was selected by the system?" required>
                 
             </div>
-            <button type="submit" class="btn btn-success">Submit</button>
+            <button type="submit" input type="submit"class="btn btn-success">Submit</button>
 
         </form>
 
